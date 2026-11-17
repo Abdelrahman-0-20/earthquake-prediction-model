@@ -9,6 +9,13 @@ requests==2.34.2
 PyYAML==6.0.3
 scipy==1.18.1
 
+# --- machine learning (required at runtime: the app loads the production
+# --- model via joblib, and joblib ships with scikit-learn) ---
+scikit-learn==1.9.1
+joblib==1.6.0
+xgboost==3.4.1
+shap==0.54.1
+
 # --- EDA / figures ---
 matplotlib==3.11.2
 seaborn==0.13.2
