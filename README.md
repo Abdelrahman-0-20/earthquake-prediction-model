@@ -1,10 +1,8 @@
 # SeismoAI — Earthquake Forecasting & Geospatial Risk Analysis
 
-[![Open in Streamlit](https://static.streamlit.app/badges/streamlit_badge_black_white.svg)](https://earthquake-prediction-model-7pks6lk8n64zj2kbwecxrw.streamlit.app/)
-[![Tests](https://img.shields.io/badge/tests-142%20passing-brightgreen)](#quick-start-golden-path)
-[![Lint](https://img.shields.io/badge/lint-ruff%20clean-brightgreen)](#quick-start-golden-path)
 
-**▶️ Live app: <https://earthquake-prediction-model-7pks6lk8n64zj2kbwecxrw.streamlit.app/>**
+
+** Live app: <https://earthquake-prediction-model-7pks6lk8n64zj2kbwecxrw.streamlit.app/>**
 
 A data-driven platform for analyzing historical seismic activity, estimating
 regional earthquake probabilities, and visualizing seismic patterns.
