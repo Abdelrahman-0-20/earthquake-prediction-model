@@ -1,0 +1,144 @@
+{
+  "below_threshold_min_mag": 0.7,
+  "below_threshold_rows": 5,
+  "date_range": {
+    "end": "2026-11-15T23:04:21.749000+00:00",
+    "start": "2000-01-01T01:19:26.990000+00:00"
+  },
+  "depth_range": {
+    "max": 735.8,
+    "min": -3.74
+  },
+  "duplicates_removed": 0,
+  "event_type_counts": {
+    "Ice Quake": 1,
+    "Landslide": 2,
+    "Rock Slide": 1,
+    "accidental explosion": 1,
+    "acoustic noise": 1,
+    "collapse": 1,
+    "earthquake": 707438,
+    "experimental explosion": 11,
+    "explosion": 4262,
+    "ice quake": 219,
+    "induced or triggered event": 1,
+    "landslide": 8,
+    "mine collapse": 15,
+    "mining explosion": 2809,
+    "nuclear explosion": 6,
+    "other event": 130,
+    "quarry blast": 63,
+    "rock burst": 134,
+    "sonic boom": 6,
+    "volcanic eruption": 74
+  },
+  "generated_at": "2026-11-16T18:17:29+00:00",
+  "hard_violations": [],
+  "magnitude_range": {
+    "max": 9.1,
+    "min": 0.7
+  },
+  "missingness": {
+    "depth": {
+      "missing": 0,
+      "pct": 0.0
+    },
+    "depthError": {
+      "missing": 208746,
+      "pct": 29.507
+    },
+    "dmin": {
+      "missing": 362699,
+      "pct": 51.269
+    },
+    "gap": {
+      "missing": 116726,
+      "pct": 16.5
+    },
+    "horizontalError": {
+      "missing": 357808,
+      "pct": 50.578
+    },
+    "id": {
+      "missing": 0,
+      "pct": 0.0
+    },
+    "latitude": {
+      "missing": 0,
+      "pct": 0.0
+    },
+    "locationSource": {
+      "missing": 0,
+      "pct": 0.0
+    },
+    "longitude": {
+      "missing": 0,
+      "pct": 0.0
+    },
+    "mag": {
+      "missing": 0,
+      "pct": 0.0
+    },
+    "magError": {
+      "missing": 356234,
+      "pct": 50.356
+    },
+    "magNst": {
+      "missing": 210391,
+      "pct": 29.74
+    },
+    "magSource": {
+      "missing": 0,
+      "pct": 0.0
+    },
+    "magType": {
+      "missing": 1,
+      "pct": 0.0
+    },
+    "month": {
+      "missing": 0,
+      "pct": 0.0
+    },
+    "net": {
+      "missing": 0,
+      "pct": 0.0
+    },
+    "nst": {
+      "missing": 232598,
+      "pct": 32.879
+    },
+    "place": {
+      "missing": 1,
+      "pct": 0.0
+    },
+    "rms": {
+      "missing": 107590,
+      "pct": 15.208
+    },
+    "status": {
+      "missing": 0,
+      "pct": 0.0
+    },
+    "time": {
+      "missing": 0,
+      "pct": 0.0
+    },
+    "type": {
+      "missing": 0,
+      "pct": 0.0
+    },
+    "updated": {
+      "missing": 0,
+      "pct": 0.0
+    },
+    "year": {
+      "missing": 0,
+      "pct": 0.0
+    }
+  },
+  "negative_depth_rows": 4359,
+  "non_earthquake_removed": 7745,
+  "processed_rows": 707438,
+  "source_files": 323,
+  "total_raw_rows": 715183
+}

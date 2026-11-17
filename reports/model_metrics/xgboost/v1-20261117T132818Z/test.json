@@ -1,0 +1,76 @@
+{
+  "brier": 0.023789028262403384,
+  "brier_skill_score": 0.018938451242400012,
+  "ece": 0.000969144876399826,
+  "f1": 0.3956867988141603,
+  "fn": 9419,
+  "fp": 11373,
+  "mean_predicted": 0.0303237681460883,
+  "model": "xgboost",
+  "n_rows": 529138,
+  "positive_rate": 0.030664968306944502,
+  "pr_auc": 0.35191041663992123,
+  "precision": 0.37442244224422444,
+  "predicted_positive_rate": 0.034357766782956434,
+  "recall": 0.41951189449032417,
+  "reference_brier": 0.02424825261221318,
+  "reference_mean_predicted": 0.028305417910303592,
+  "roc_auc": 0.8993459725219016,
+  "shap_top_features": [
+    {
+      "feature": "days_since_last_event",
+      "mean_abs_shap": 0.5516478419303894,
+      "share_of_total": 0.23462727665901184
+    },
+    {
+      "feature": "latitude_center",
+      "mean_abs_shap": 0.48620569705963135,
+      "share_of_total": 0.20679336786270142
+    },
+    {
+      "feature": "longitude_center",
+      "mean_abs_shap": 0.38842082023620605,
+      "share_of_total": 0.16520343720912933
+    },
+    {
+      "feature": "events_last_365d",
+      "mean_abs_shap": 0.38841313123703003,
+      "share_of_total": 0.1652001589536667
+    },
+    {
+      "feature": "events_ge45_last_365d",
+      "mean_abs_shap": 0.32583072781562805,
+      "share_of_total": 0.13858257234096527
+    },
+    {
+      "feature": "mean_magnitude_90d",
+      "mean_abs_shap": 0.0969555526971817,
+      "share_of_total": 0.04123720899224281
+    },
+    {
+      "feature": "events_last_90d",
+      "mean_abs_shap": 0.04510064050555229,
+      "share_of_total": 0.019182238727808
+    },
+    {
+      "feature": "max_magnitude_90d",
+      "mean_abs_shap": 0.030458424240350723,
+      "share_of_total": 0.012954600155353546
+    },
+    {
+      "feature": "mean_depth_90d",
+      "mean_abs_shap": 0.027748210355639458,
+      "share_of_total": 0.011801890097558498
+    },
+    {
+      "feature": "events_last_30d",
+      "mean_abs_shap": 0.010385693050920963,
+      "share_of_total": 0.004417250864207745
+    }
+  ],
+  "split": "test",
+  "threshold": 0.19301453232765198,
+  "tn": 501539,
+  "tp": 6807,
+  "version": "v1-20261117T132818Z"
+}

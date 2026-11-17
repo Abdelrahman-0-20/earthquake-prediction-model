@@ -1,0 +1,14 @@
+{
+  "history": [
+    {
+      "model": "xgboost",
+      "promoted_at": "2026-11-17T13:45:56+00:00",
+      "replaced": null,
+      "reviewed_by": "abdel",
+      "version": "v1-20261117T132818Z"
+    }
+  ],
+  "production": {
+    "xgboost": "v1-20261117T132818Z"
+  }
+}

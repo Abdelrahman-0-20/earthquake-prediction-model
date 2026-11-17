@@ -1,0 +1,156 @@
+[
+  {
+    "region": "Other / uncategorized",
+    "n_rows": 372876,
+    "positive_rate": 0.02360570270009333,
+    "pr_auc": 0.02360570270009333,
+    "roc_auc": 0.5,
+    "brier": 0.02307056082318523,
+    "brier_skill_score": -0.20578734766842688,
+    "ece": 0.0046997152102102695,
+    "reliable": true
+  },
+  {
+    "region": "Alaska",
+    "n_rows": 27646,
+    "positive_rate": 0.007198148014179267,
+    "pr_auc": 0.007198148014179267,
+    "roc_auc": 0.5,
+    "brier": 0.007591851521813073,
+    "brier_skill_score": -0.109730720726392,
+    "ece": 0.021107269896124336,
+    "reliable": true
+  },
+  {
+    "region": "Indonesia",
+    "n_rows": 26496,
+    "positive_rate": 0.08589975845410629,
+    "pr_auc": 0.08589975845410629,
+    "roc_auc": 0.5,
+    "brier": 0.08183809801430801,
+    "brier_skill_score": -0.2988543275632556,
+    "ece": 0.05759434054380269,
+    "reliable": true
+  },
+  {
+    "region": "Mid-Atlantic Ridge",
+    "n_rows": 20332,
+    "positive_rate": 0.03841235490851859,
+    "pr_auc": 0.03841235490851859,
+    "roc_auc": 0.5,
+    "brier": 0.037038996074386495,
+    "brier_skill_score": -0.2593700768676044,
+    "ece": 0.010106936998215,
+    "reliable": true
+  },
+  {
+    "region": "T\u00fcrkiye & Iran",
+    "n_rows": 14858,
+    "positive_rate": 0.015951002826759996,
+    "pr_auc": 0.015951002826759996,
+    "roc_auc": 0.5,
+    "brier": 0.015849199907637182,
+    "brier_skill_score": -0.031893357069199935,
+    "ece": 0.012354415083543603,
+    "reliable": true
+  },
+  {
+    "region": "Chile & Peru",
+    "n_rows": 12834,
+    "positive_rate": 0.07277544023687081,
+    "pr_auc": 0.07277544023687081,
+    "roc_auc": 0.5,
+    "brier": 0.06945675842092586,
+    "brier_skill_score": -0.20544304789432966,
+    "ece": 0.044470022326567216,
+    "reliable": true
+  },
+  {
+    "region": "Greece & Italy",
+    "n_rows": 12052,
+    "positive_rate": 0.01676070361765682,
+    "pr_auc": 0.01676070361765682,
+    "roc_auc": 0.5,
+    "brier": 0.016613062859996735,
+    "brier_skill_score": -0.05957902342802757,
+    "ece": 0.011544714292646776,
+    "reliable": true
+  },
+  {
+    "region": "Japan",
+    "n_rows": 10948,
+    "positive_rate": 0.06996711728169529,
+    "pr_auc": 0.06996711728169529,
+    "roc_auc": 0.5,
+    "brier": 0.06680741697549701,
+    "brier_skill_score": -0.22356511779542165,
+    "ece": 0.04166169937139169,
+    "reliable": true
+  },
+  {
+    "region": "Central America & Mexico",
+    "n_rows": 8464,
+    "positive_rate": 0.05635633270321361,
+    "pr_auc": 0.05635633270321361,
+    "roc_auc": 0.5,
+    "brier": 0.05396715028817741,
+    "brier_skill_score": -0.20938572131811317,
+    "ece": 0.028050914792910015,
+    "reliable": true
+  },
+  {
+    "region": "Papua New Guinea & Solomons",
+    "n_rows": 6808,
+    "positive_rate": 0.12426556991774383,
+    "pr_auc": 0.12426556991774383,
+    "roc_auc": 0.5,
+    "brier": 0.11803198882405322,
+    "brier_skill_score": -0.4462798121539304,
+    "ece": 0.09596015200744024,
+    "reliable": true
+  },
+  {
+    "region": "California & US West",
+    "n_rows": 5842,
+    "positive_rate": 0.007360492981855529,
+    "pr_auc": 0.007360492981855529,
+    "roc_auc": 0.5,
+    "brier": 0.007745006005177912,
+    "brier_skill_score": -0.10150549695052047,
+    "ece": 0.020944924928448072,
+    "reliable": true
+  },
+  {
+    "region": "Philippines",
+    "n_rows": 4508,
+    "positive_rate": 0.12067435669920142,
+    "pr_auc": 0.12067435669920142,
+    "roc_auc": 0.5,
+    "brier": 0.1146440771874225,
+    "brier_skill_score": -0.29436701337746496,
+    "ece": 0.09236893878889782,
+    "reliable": true
+  },
+  {
+    "region": "New Zealand",
+    "n_rows": 4416,
+    "positive_rate": 0.024230072463768116,
+    "pr_auc": 0.024230072463768116,
+    "roc_auc": 0.5,
+    "brier": 0.023659584492677264,
+    "brier_skill_score": -0.03828332441103477,
+    "ece": 0.004075345446535476,
+    "reliable": true
+  },
+  {
+    "region": "Hawaii",
+    "n_rows": 1058,
+    "positive_rate": 0.011342155009451797,
+    "pr_auc": 0.011342155009451797,
+    "roc_auc": 0.5,
+    "brier": 0.011501262817436781,
+    "brier_skill_score": -0.09767699841873911,
+    "ece": 0.016963262900851796,
+    "reliable": true
+  }
+]

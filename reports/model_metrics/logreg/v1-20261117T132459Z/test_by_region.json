@@ -1,0 +1,156 @@
+[
+  {
+    "region": "Other / uncategorized",
+    "n_rows": 372876,
+    "positive_rate": 0.02360570270009333,
+    "pr_auc": 0.25377500983904505,
+    "roc_auc": 0.8618545150781518,
+    "brier": 0.020004016346622862,
+    "brier_skill_score": -0.04551380428818019,
+    "ece": 0.0017028261361587286,
+    "reliable": true
+  },
+  {
+    "region": "Alaska",
+    "n_rows": 27646,
+    "positive_rate": 0.007198148014179267,
+    "pr_auc": 0.0725109756508576,
+    "roc_auc": 0.8953171145925275,
+    "brier": 0.007041840688632665,
+    "brier_skill_score": -0.029333479479127567,
+    "ece": 0.008246473648088419,
+    "reliable": true
+  },
+  {
+    "region": "Indonesia",
+    "n_rows": 26496,
+    "positive_rate": 0.08589975845410629,
+    "pr_auc": 0.3497639869894731,
+    "roc_auc": 0.8243517427390107,
+    "brier": 0.067357846707966,
+    "brier_skill_score": -0.06903792750276572,
+    "ece": 0.018715530512616426,
+    "reliable": true
+  },
+  {
+    "region": "Mid-Atlantic Ridge",
+    "n_rows": 20332,
+    "positive_rate": 0.03841235490851859,
+    "pr_auc": 0.3600319697429043,
+    "roc_auc": 0.8616570038333704,
+    "brier": 0.029659756844965017,
+    "brier_skill_score": -0.008467135089237132,
+    "ece": 0.010784533014280437,
+    "reliable": true
+  },
+  {
+    "region": "T\u00fcrkiye & Iran",
+    "n_rows": 14858,
+    "positive_rate": 0.015951002826759996,
+    "pr_auc": 0.0982111711262657,
+    "roc_auc": 0.7649135960443002,
+    "brier": 0.015339717377251476,
+    "brier_skill_score": 0.0012775059214603646,
+    "ece": 0.003936792970147094,
+    "reliable": true
+  },
+  {
+    "region": "Chile & Peru",
+    "n_rows": 12834,
+    "positive_rate": 0.07277544023687081,
+    "pr_auc": 0.29101560107245056,
+    "roc_auc": 0.7962216364061685,
+    "brier": 0.05992773271115401,
+    "brier_skill_score": -0.04006392488028898,
+    "ece": 0.012406542913696056,
+    "reliable": true
+  },
+  {
+    "region": "Greece & Italy",
+    "n_rows": 12052,
+    "positive_rate": 0.01676070361765682,
+    "pr_auc": 0.1092596256310562,
+    "roc_auc": 0.8520980072690814,
+    "brier": 0.01614450463281927,
+    "brier_skill_score": -0.02969443965465568,
+    "ece": 0.001993078087689814,
+    "reliable": true
+  },
+  {
+    "region": "Japan",
+    "n_rows": 10948,
+    "positive_rate": 0.06996711728169529,
+    "pr_auc": 0.274521404374861,
+    "roc_auc": 0.8315964075240544,
+    "brier": 0.05902147019965414,
+    "brier_skill_score": -0.08096698550380577,
+    "ece": 0.02727915118989441,
+    "reliable": true
+  },
+  {
+    "region": "Central America & Mexico",
+    "n_rows": 8464,
+    "positive_rate": 0.05635633270321361,
+    "pr_auc": 0.26374297573634087,
+    "roc_auc": 0.8550734566311767,
+    "brier": 0.04854183943947939,
+    "brier_skill_score": -0.08780632646233122,
+    "ece": 0.025523521587951067,
+    "reliable": true
+  },
+  {
+    "region": "Papua New Guinea & Solomons",
+    "n_rows": 6808,
+    "positive_rate": 0.12426556991774383,
+    "pr_auc": 0.43040047808422455,
+    "roc_auc": 0.8527256549161236,
+    "brier": 0.089406375603094,
+    "brier_skill_score": -0.0955219631633939,
+    "ece": 0.03862830558161555,
+    "reliable": true
+  },
+  {
+    "region": "California & US West",
+    "n_rows": 5842,
+    "positive_rate": 0.007360492981855529,
+    "pr_auc": 0.061824013262706944,
+    "roc_auc": 0.8411795137092603,
+    "brier": 0.007665378615257628,
+    "brier_skill_score": -0.09018077910699951,
+    "ece": 0.018292263550376466,
+    "reliable": true
+  },
+  {
+    "region": "Philippines",
+    "n_rows": 4508,
+    "positive_rate": 0.12067435669920142,
+    "pr_auc": 0.4622737238443872,
+    "roc_auc": 0.8215488106191013,
+    "brier": 0.08832679268784063,
+    "brier_skill_score": 0.0027632507725089406,
+    "ece": 0.04995500363390497,
+    "reliable": true
+  },
+  {
+    "region": "New Zealand",
+    "n_rows": 4416,
+    "positive_rate": 0.024230072463768116,
+    "pr_auc": 0.1014267222769778,
+    "roc_auc": 0.8031809102009921,
+    "brier": 0.024327632815229996,
+    "brier_skill_score": -0.0676001297599178,
+    "ece": 0.01957035630028745,
+    "reliable": true
+  },
+  {
+    "region": "Hawaii",
+    "n_rows": 1058,
+    "positive_rate": 0.011342155009451797,
+    "pr_auc": 0.13091282821761283,
+    "roc_auc": 0.9008922880815806,
+    "brier": 0.010850662017988412,
+    "brier_skill_score": -0.035583857513845185,
+    "ece": 0.013274082145603367,
+    "reliable": true
+  }
+]

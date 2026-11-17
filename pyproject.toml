@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seismo"
+version = "0.1.0"
+description = "SeismoAI — seismic intelligence and geospatial risk analysis"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.2",
+    "numpy>=1.26",
+    "requests>=2.31",
+    "pyarrow>=15",
+    "PyYAML>=6.0",
+    "scipy>=1.13",
+    "matplotlib>=3.9",
+    "seaborn>=0.13",
+]
+
+[project.optional-dependencies]
+app = [
+    "streamlit>=1.36",
+    "plotly>=5.20",
+    "pydeck>=0.9",
+]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.4",
+    "jupytext>=1.16",
+    "nbconvert>=7.16",
+    "ipykernel>=6.29",
+]
+
+[project.scripts]
+seismo = "seismo.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+# A bare expression at the end of a notebook cell is how it renders output.
+"notebooks/*.py" = ["B018"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

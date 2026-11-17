@@ -1,0 +1,39 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# --- Environments ---
+.venv/
+venv/
+env/
+
+# --- Test / lint caches ---
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Data: large, regenerable from scripts (samples/ are committed) ---
+data/raw/
+data/processed/
+data/features/
+data/export/
+
+# --- Model artifacts: regenerable, large ---
+models/*
+!models/registry.json
+
+# --- Runtime logs ---
+reports/logs/
+
+# --- Notebooks ---
+notebooks/.ipynb_checkpoints/
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+.DS_Store

@@ -1,0 +1,28 @@
+# Pinned for reproducibility (Python 3.12).
+# Install: pip install -r requirements.txt   — or use `make setup` / `pip install -e ".[dev]"`
+
+# --- data pipeline ---
+pandas==3.1.1
+numpy==2.5.5
+pyarrow==26.0.1
+requests==2.34.2
+PyYAML==6.0.3
+scipy==1.18.1
+
+# --- EDA / figures ---
+matplotlib==3.11.2
+seaborn==0.13.2
+
+# --- quality gates ---
+pytest==9.2.0
+ruff==0.17.5
+
+# --- notebooks ---
+jupytext==1.19.6
+nbconvert==7.17.2
+ipykernel==7.4.0
+
+# --- Streamlit app ---
+streamlit==1.67.0
+plotly==7.1.0
+pydeck==0.9.3

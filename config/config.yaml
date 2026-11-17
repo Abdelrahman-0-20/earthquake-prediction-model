@@ -1,0 +1,84 @@
+# ============================================================
+# SeismoAI — single source of truth for the project
+# CLI flags > environment > this file > built-in defaults
+# ============================================================
+
+project:
+  name: SeismoAI
+  version: 0.1.0
+
+collection:
+  # Frozen for reproducibility: "now" is not a reproducible end date.
+  start_date: "2000-01-01"
+  end_date: "2026-11-15"        # inclusive; chunks end at 2026-11-16
+  min_magnitude: 2.5
+  chunk: monthly                # monthly windows; API caps 20,000 rows/request
+  format: csv                   # CSV parsed once, stored as Parquet
+  api_query_url: "https://earthquake.usgs.gov/fdsnws/event/1/query"
+  max_rows_per_request: 20000
+  timeout_seconds: 60
+  max_retries: 5
+  backoff_base_seconds: 2.0     # exponential: 2s, 4s, 8s, 16s
+
+paths:                          # relative to repository root
+  raw: data/raw
+  processed: data/processed
+  features: data/features
+  samples: data/samples
+  reports: reports
+  models: models
+
+validation:
+  latitude_range: [-90.0, 90.0]
+  longitude_range: [-180.0, 180.0]
+  keep_event_types: ["earthquake"]   # non-earthquake rows dropped from processed
+  report_dir: reports/data_quality
+
+grid:                           # Module 02/03 analysis grid
+  cell_size_deg: 1.0
+
+forecast:                       # Module 02 prediction problem
+  magnitude_threshold: 4.5
+  horizon_days: 30
+  min_lookback_days: 365
+
+splits:                         # chronological, purged (no random row splits)
+  train_end: "2018-12-31"
+  val_end: "2022-12-31"
+  purge_days: 30
+
+seed: 42
+
+# --- model training (Week 3) ------------------------------------------
+# Only the knobs worth exposing; everything else has a documented default in
+# src/seismo/models/train.py.
+models:
+  # Class weighting is OFF, and the measurement behind that is recorded in
+  # src/seismo/models/train.py: balanced weights let the models rank well
+  # (PR-AUC 0.30-0.36) but broke calibration — mean predicted 0.28 against a
+  # 0.032 base rate, i.e. Brier Skill Score ~-4 versus counting history.
+  # Balancing forces the effective prior toward 50/50, so probabilities stop
+  # meaning anything. Set true only for ranking-focused experiments.
+  use_class_weights: false
+
+  # Climatological baseline: prior strength for empirical-Bayes shrinkage of
+  # per-cell rates toward the global rate (larger = stronger shrinkage).
+  climatology_prior_strength: 50.0
+
+  # Random forest. max_depth is deliberately capped: an unconstrained forest
+  # on 2.48M rows grew to depth ~47 / 9M nodes / a 724MB artifact that made
+  # SHAP traversal impractical. 10 features need far less capacity than that,
+  # and a larger leaf gives smoother (better-calibrated) probabilities.
+  rf_n_estimators: 200
+  rf_max_depth: 16
+  rf_min_samples_leaf: 50
+
+  # XGBoost: shallow boosted trees, early stopping on validation log-loss.
+  xgb_n_estimators: 3000
+  xgb_learning_rate: 0.08
+  xgb_max_depth: 6
+  xgb_min_child_weight: 20
+  xgb_early_stopping_rounds: 50
+
+  logreg_C: 1.0
+  n_jobs: -1

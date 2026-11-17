@@ -1,0 +1,23 @@
+# SeismoAI — Streamlit theme
+# Design tokens from the project design system: deep navy text, blue accent,
+# light-gray surfaces, minimal chrome. Scientific instrument, not a showpiece.
+
+[theme]
+base = "light"
+primaryColor = "#2583A6"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#E9EEF3"
+textColor = "#14263D"
+font = "sans serif"
+
+[server]
+headless = true
+enableCORS = false
+enableXsrfProtection = true
+maxUploadSize = 200
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"

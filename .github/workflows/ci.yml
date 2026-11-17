@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.12"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      - name: Install
+        run: pip install -e ".[dev]"
+
+      - name: Lint
+        run: ruff check src tests
+
+      - name: Test
+        run: pytest
+
+      # Startup-time budget: `seismo --help` must stay under 1.2s so the CLI
+      # never becomes something engineers route around.
+      - name: CLI startup budget
+        run: |
+          start=$(date +%s%N)
+          seismo --help > /dev/null
+          end=$(date +%s%N)
+          elapsed_ms=$(( (end - start) / 1000000 ))
+          echo "seismo --help took ${elapsed_ms}ms"
+          if [ "$elapsed_ms" -gt 1200 ]; then
+            echo "::error::CLI startup exceeded 1200ms budget"
+            exit 1
+          fi
