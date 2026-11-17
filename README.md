@@ -125,11 +125,12 @@ Geospatial Analysis · Model Performance**. All artifact dependencies are
 checked on startup; if something is missing the sidebar shows the exact
 command that builds it instead of raising a traceback.
 
-**Streamlit Community Cloud:** point it at this repository with
+**Streamlit Community Cloud:** create an app from this repository with
 `app/streamlit_app.py` as the entry point and `requirements.txt` as the
-dependency file. Data and model artifacts are gitignored, so a deployment
-needs them provisioned separately (or a small sample dataset for demo mode) —
-see `docs/METHODOLOGY.md` §10 for what is and is not committed.
+dependency file. The deployed artifact subset (processed catalog, feature
+dataset, cell activity, and the production model) is committed, so a fresh
+clone renders the real application with no provisioning step — see
+`docs/ADR-004-commit-deployed-artifacts.md` for what is and is not committed.
 
 ## Repository layout
 
@@ -139,7 +140,8 @@ src/seismo/  pipeline package: data, features, models, geospatial
 tests/       78 tests incl. leakage, split-integrity, CLI contract
 notebooks/   01–05 (source .py → executed .ipynb; see notebooks/README.md)
 config/      config.yaml — single source of truth
-data/        raw / processed / features / export (gitignored) + samples/ (committed)
+data/        processed + features (committed, see ADR-004);
+             raw / export (gitignored) · samples/ (committed)
 reports/     figures, model metrics, data-quality reports
 docs/        architecture, plan, data dictionary
 tools/       notebook build tooling
@@ -150,8 +152,11 @@ tools/       notebook build tooling
 USGS ComCat earthquake catalog —
 [catalog documentation](https://earthquake.usgs.gov/data/comcat/) ·
 [API](https://earthquake.usgs.gov/fdsnws/event/1/).
-Raw data and model artifacts are not committed; reproducible fetch scripts and a
-small sample dataset are.
+Raw pulls and the CSV export stay out of git (re-fetchable, and one file
+exceeds GitHub's 100 MB limit); the **deployed subset** — processed catalog,
+feature dataset, cell activity, and the production xgboost model — is committed
+so the application runs from a fresh clone. Every committed artifact remains
+reproducible from the documented manifest via the Makefile.
 
 ## Known catalog limitations (carried into every analysis)
 

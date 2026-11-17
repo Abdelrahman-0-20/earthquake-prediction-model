@@ -275,8 +275,15 @@ registry — an unpromoted experiment can never reach a user.
   `features.json` (exact feature list and order), `metrics.json`,
   `training_config.yaml` (including data lineage), `data_manifest_ref.json`
   (raw collection parameters, month count, row total), `threshold.json`.
-- Raw and processed data are gitignored; the repository ships reproducible
-  fetch scripts and a committed sample dataset.
+- **What is committed:** the deployed subset (processed catalog, feature
+  dataset, cell activity, production model) plus `data/samples/` and the
+  promotion registry — see `ADR-004-commit-deployed-artifacts.md`.
+  **What is not:** `data/raw/` (55 MB, re-fetchable), `data/export/`
+  (contains a 141 MB file GitHub rejects), and non-production model versions
+  (the unused random forest alone is 137 MB).
+- All of it is still reproducible from the manifest via `make data` /
+  `make train` — committed artifacts are pipeline *outputs*, not a substitute
+  for the pipeline.
 - `make notebooks` regenerates all executed notebooks from `.py` sources.
 
 ---

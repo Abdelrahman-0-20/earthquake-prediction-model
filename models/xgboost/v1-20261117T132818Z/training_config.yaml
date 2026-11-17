@@ -1,0 +1,29 @@
+name: xgboost
+version: v1-20261117T132818Z
+seed: 42
+model_settings:
+  use_class_weights: false
+  climatology_prior_strength: 50.0
+  rf_n_estimators: 200
+  rf_max_depth: 16
+  rf_min_samples_leaf: 50
+  xgb_n_estimators: 3000
+  xgb_learning_rate: 0.08
+  xgb_max_depth: 6
+  xgb_min_child_weight: 20
+  xgb_early_stopping_rounds: 50
+  logreg_C: 1.0
+  n_jobs: -1
+forecast:
+  magnitude_threshold: 4.5
+  horizon_days: 30
+  min_lookback_days: 365
+splits:
+  train_end: '2018-12-31'
+  val_end: '2022-12-31'
+  purge_days: 30
+grid:
+  cell_size_deg: 1.0
+fit_seconds: 83.03
+train_rows: 2484648
+val_rows: 552144

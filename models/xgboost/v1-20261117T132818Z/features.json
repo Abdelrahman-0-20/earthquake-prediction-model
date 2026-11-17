@@ -1,0 +1,16 @@
+{
+  "feature_cols": [
+    "latitude_center",
+    "longitude_center",
+    "events_last_30d",
+    "events_last_90d",
+    "events_last_365d",
+    "mean_magnitude_90d",
+    "max_magnitude_90d",
+    "mean_depth_90d",
+    "events_ge45_last_365d",
+    "days_since_last_event"
+  ],
+  "target": "target",
+  "positive_probability_column": 1
+}

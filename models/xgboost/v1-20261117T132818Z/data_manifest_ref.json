@@ -1,0 +1,19 @@
+{
+  "processed": "/home/abdel/Desktop/earthquake prediction model/data/processed/earthquakes.parquet",
+  "features": "/home/abdel/Desktop/earthquake prediction model/data/features/regional_monthly_features.parquet",
+  "collection": {
+    "start_date": "2000-01-01",
+    "end_date": "2026-11-15",
+    "min_magnitude": 2.5
+  },
+  "raw_manifest": {
+    "months_recorded": 323,
+    "total_rows": 715183,
+    "all_ok": true,
+    "params": {
+      "end": "2026-11-15",
+      "minmagnitude": 2.5,
+      "start": "2000-01-01"
+    }
+  }
+}

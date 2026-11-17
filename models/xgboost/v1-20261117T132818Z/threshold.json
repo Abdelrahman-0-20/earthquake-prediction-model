@@ -1,0 +1,5 @@
+{
+  "threshold": 0.19301453232765198,
+  "objective": "f1",
+  "tuned_on": "validation"
+}

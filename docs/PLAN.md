@@ -51,13 +51,13 @@ SeismoAI/
 ├── cli/
 │   └── seismo.py                  # `seismo` command entry point
 │
-├── data/                          # gitignored except samples/
+├── data/                          # deployed subset committed (ADR-004); raw/export ignored
 │   ├── raw/                       # immutable USGS pulls + manifest.json
 │   ├── processed/                 # earthquakes.parquet
 │   ├── features/                  # regional_monthly_features.parquet
 │   └── samples/                   # tiny committed sample for tests/app dev
 │
-├── models/                        # gitignored (registry.json may be committed)
+├── models/                        # production model + registry committed (ADR-004)
 ├── reports/
 │   ├── figures/
 │   ├── model_metrics/

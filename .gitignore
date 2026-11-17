@@ -17,15 +17,26 @@ env/
 .coverage
 htmlcov/
 
-# --- Data: large, regenerable from scripts (samples/ are committed) ---
+# --- Data ---
+# Regenerable bulk stays out; the *deployed subset* is committed so a fresh
+# clone and the Streamlit Cloud deployment both render the real application.
+# See docs/ADR-004-commit-deployed-artifacts.md for the full rationale.
+#
+# NOTE: .gitignore has no inline comments — a '#' only starts a comment at
+# the beginning of a line. Keep patterns bare.
+#
+# data/raw/ is 55MB and re-fetchable via `seismo data fetch`.
 data/raw/
-data/processed/
-data/features/
+# data/export/ holds processed.csv at 141MB; GitHub rejects files over 100MB.
 data/export/
+# data/processed/ and data/features/ are intentionally NOT ignored.
 
 # --- Model artifacts: regenerable, large ---
+# Only the production model and the registry are committed; everything else
+# is reproduced by `seismo model train --all`.
 models/*
 !models/registry.json
+!models/xgboost/
 
 # --- Runtime logs ---
 reports/logs/

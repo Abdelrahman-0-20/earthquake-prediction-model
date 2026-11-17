@@ -1,0 +1,27 @@
+{
+  "name": "xgboost",
+  "version": "v1-20261117T132818Z",
+  "path": "/home/abdel/Desktop/earthquake prediction model/models/xgboost/v1-20261117T132818Z",
+  "train_rows": 2484648,
+  "val_rows": 552144,
+  "positive_rate_train": 0.028305,
+  "positive_rate_val": 0.031849,
+  "feature_cols": [
+    "latitude_center",
+    "longitude_center",
+    "events_last_30d",
+    "events_last_90d",
+    "events_last_365d",
+    "mean_magnitude_90d",
+    "max_magnitude_90d",
+    "mean_depth_90d",
+    "events_ge45_last_365d",
+    "days_since_last_event"
+  ],
+  "fit_seconds": 83.03,
+  "notes": [
+    "Fitted on the train split only; validation used for selection; test held out for final evaluation.",
+    "Seed = 42.",
+    "scale_pos_weight set to the training imbalance ratio; early stopping monitored on validation log-loss."
+  ]
+}
