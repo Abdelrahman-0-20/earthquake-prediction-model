@@ -1,5 +1,11 @@
 # SeismoAI — Earthquake Forecasting & Geospatial Risk Analysis
 
+[![Open in Streamlit](https://static.streamlit.app/badges/streamlit_badge_black_white.svg)](https://earthquake-prediction-model-7pks6lk8n64zj2kbwecxrw.streamlit.app/)
+[![Tests](https://img.shields.io/badge/tests-142%20passing-brightgreen)](#quick-start-golden-path)
+[![Lint](https://img.shields.io/badge/lint-ruff%20clean-brightgreen)](#quick-start-golden-path)
+
+**▶️ Live app: <https://earthquake-prediction-model-7pks6lk8n64zj2kbwecxrw.streamlit.app/>**
+
 A data-driven platform for analyzing historical seismic activity, estimating
 regional earthquake probabilities, and visualizing seismic patterns.
 
@@ -15,7 +21,7 @@ regional earthquake probabilities, and visualizing seismic patterns.
 | 1 | Data engineering, validation, EDA | ✅ complete |
 | 2 | Geospatial grid, feature engineering, leakage guards | ✅ complete |
 | 3 | Machine learning (baselines + 3 models, calibration, SHAP) | ✅ complete |
-| 4 | Streamlit application + deployment | 🔄 in progress |
+| 4 | Streamlit application + deployment | ✅ complete |
 
 See **[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)**,
 **[docs/PLAN.md](PLAN.md)** and **[docs/DATA_DICTIONARY.md](docs/DATA_DICTIONARY.md)**.
