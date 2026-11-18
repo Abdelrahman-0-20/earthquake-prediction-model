@@ -16,10 +16,10 @@ regional earthquake probabilities, and visualizing seismic patterns.
 
 | Week | Scope | State |
 |---|---|---|
-| 1 | Data engineering, validation, EDA | ✅ complete |
-| 2 | Geospatial grid, feature engineering, leakage guards | ✅ complete |
-| 3 | Machine learning (baselines + 3 models, calibration, SHAP) | ✅ complete |
-| 4 | Streamlit application + deployment | ✅ complete |
+| 1 | Data engineering, validation, EDA | complete |
+| 2 | Geospatial grid, feature engineering, leakage guards | complete |
+| 3 | Machine learning (baselines + 3 models, calibration, SHAP) | complete |
+| 4 | Streamlit application + deployment | complete |
 
 See **[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)**,
 **[docs/PLAN.md](PLAN.md)** and **[docs/DATA_DICTIONARY.md](docs/DATA_DICTIONARY.md)**.
